@@ -15,8 +15,6 @@
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 
-    <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
     rel="stylesheet">
@@ -61,5 +59,6 @@
             </div>
         </nav>
     </header>
+    @yield('content')
 </body>
 </html>

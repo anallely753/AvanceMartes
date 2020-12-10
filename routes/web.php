@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TareaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,6 +30,7 @@ Route::middleware(['admin'])->group(function(){
 	Route::get('admin2', function(){
 		return view('layouts.admin');
 	});
+	Route::resource('admintareas', TareaController::class);
 });
 
 
